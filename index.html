@@ -1,40 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body><div id="navigation">
-    <nav id="navbar">
-        <a class="nav" href="#home">Home</a>
-          
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <div id="navigation">
+      <nav id="navbar">
+        <a class="nav" href="#STUDENT">Home</a>
         <a class="nav" href="#register">Register</a>
-        <a class="nav"  href="#dashboard">Dashboard</a>
+        <a class="nav" href="#dashboard">Dashboard</a>
         <a class="nav" href="#Studen">Student Profile</a>
-        
-    </nav>
-  
-
-</div>
+      </nav>
+    </div>
     <h1 class="heading">Student Management System</h1>
     <div id="box">
+      <section id="login">
         <h1>LOGIN DETAILS</h1>
-        <label>Email :</label>
-        <input type="email" placeholder="Email">
-        <br>
-        <br>
-        <label>Password:</label>
-        <input type="password" placeholder="Password">
-        <br>
-        <a  id="pass"href="a"> Forgot Password?</a>
-        
-        <button>Login</button>
-        <br>
-        <br>
-        <a class="user"href="b"> New User? Register here</a>
 
+        <label>Email :</label>
+        <input type="email" placeholder="Email" required />
+        <br />
+        <br />
+        <label>Password:</label>
+        <input type="password" placeholder="Password" required />
+        <br />
+        <a id="pass" href="a"> Forgot Password?</a>
+
+        <button>Login</button>
+        <br />
+        <br />
+        <a class="user" href="b"> New User? Register here</a>
+      </section>
     </div>
-</body>
+    <section id="register">
+      <div>
+        <h1>REGISTER HERE</h1>
+        <br />
+        <label> Full name :</label>
+        <input type="text" placeholder="Full name" required />
+        <br />
+        <label>Email :</label>
+        <input type="email" placeholder="Email" required />
+        <br />
+        <label>Mobile Number :</label>
+        <input type="tel" placeholder="Phone " required />
+        <label>Date of Birth :</label>
+        <br />
+        <input type="date" required />
+        <br />
+        <br />
+        <label>Course :</label>
+        <select name="Course">
+          <option value="">Select Course</option>
+          <option value="CSE">Computer Science Engineering</option>
+          <option value="MCE">Mechanical Engineering</option>
+          <option value="ECE">Electronic Engineering</option>
+          <option value="AME">Automobile Engineering</option>
+        </select>
+        <br />
+        <br />
+        <label>Password :</label>
+        <input type="password" placeholder="Password" required />
+        <label>Confirm Password :</label>
+        <input type="password" placeholder="Confirm Password" required />
+        <button id="reg">REGISTER</button>
+        <br />
+        <a href="#login">Already have an account? Login</a>
+      </div>
+    </section>
+    <section id="Dashboard">
+        <div>
+<h1>Dashboard</h1>
+<input type="search" placeholder="Search">
+<div class="icon">
+
+    <i class="fa-solid fa-bell notification"></i>
+    <i class="fa-solid fa-circle-user profile"></i>
+</div>
+</div>
+    </section>
+  </body>
 </html>
